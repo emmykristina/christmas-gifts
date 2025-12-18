@@ -7,23 +7,28 @@ GIFTS = {
         'Whiskyglas', # values:
         'Träningshandskar',
         'Bluetooth-högtalare',
+        ''
     ],
-    'kvinna': [ # key
-        'Doftljus', # values:
+    'kvinna': [
+        'Doftljus',
         'Tofflor',
         'Smycke',
     ],
     'pojkvän': [
         'Gaming-musmatta',
         'Personlig nyckelring',
+        'Pyjamas'
     ],
     'flickvän': [
         'Fotoalbum',
         'Personlig mugg',
+        'Nattlinne'
     ],
     'alla': [
         'Biobiljetter',
-        'Godiskorg',
+        'Chokladask',
         'Presentkort på upplevelse',
+        'Jultröja',
+        'LED blockljus'
     ],
 }
