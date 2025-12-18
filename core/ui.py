@@ -1,6 +1,6 @@
 # funktion som endast skriver ut huvudmenyn.
 def show_menu():
-    print('\n\u2728Julklappar\u2728')
+    print('\nJulklappar till:')
     print('1) Man')
     print('2) Kvinna')
     print('3) Pojkvän')
@@ -24,3 +24,11 @@ def ask_continue() -> bool:
         if answer in ['j', 'n']:  # om svaret är j = retunera True, om n = False
             return answer == 'j'
         print('Skriv j eller n.') # felmeddelande
+
+# funktion som frågar användaren om de vill spara förslagen i en textfil.
+def ask_save() -> bool:
+    while True:
+        answer = input('Vill du spara förslaget i en textfil? (j/n): ').strip().lower()
+        if answer in ['j', 'n']:
+            return answer == 'j'
+        print('Skriv j eller n.')
