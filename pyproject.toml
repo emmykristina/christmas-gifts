@@ -1,0 +1,10 @@
+[project]
+name = 'christmas-gifts'
+version = '0.1.0'
+
+[project.scripts]
+christmas-gifts = 'core.main:main'
+
+[build-system]
+requires = ['setuptools']
+build-backend = 'setuptools.build_meta'

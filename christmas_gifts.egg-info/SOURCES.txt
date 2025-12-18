@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+christmas_gifts.egg-info/PKG-INFO
+christmas_gifts.egg-info/SOURCES.txt
+christmas_gifts.egg-info/dependency_links.txt
+christmas_gifts.egg-info/entry_points.txt
+christmas_gifts.egg-info/top_level.txt
+core/__init__.py
+core/gifts_data.py
+core/gifts_logic.py
+core/main.py
+core/ui.py

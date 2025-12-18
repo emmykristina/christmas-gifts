@@ -1,0 +1,2 @@
+[console_scripts]
+christmas-gifts = core.main:main
