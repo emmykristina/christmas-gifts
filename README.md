@@ -29,6 +29,9 @@ python -m core.main
 
 
 Projektstruktur:
+## Projektstruktur
+
+```text
 christmas_gifts
 │
 ├── core
@@ -36,11 +39,11 @@ christmas_gifts
 │   ├── config.py
 │   ├── gifts_data.py
 │   ├── gifts_logic.py
-│   ├── main.py          # Huvudprogram
-│   └── ui.py            # Menyer och användarinput
+│   ├── main.py
+│   └── ui.py
 │
 ├── data
-│   └── saved_gifts.txt  # Sparade julklappsförslag
+│   └── saved_gifts.txt
 │
 ├── .gitignore
 ├── pyproject.toml
