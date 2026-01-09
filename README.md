@@ -1,14 +1,49 @@
-Arkitektur:
+== Christmas Gifts CLI ==
 
-main.py – startar programmet och håller huvudloopen.
+Ett enkelt CLI-program som ger julklappsförslag baserat på kategori och låter användaren spara förslag till en textfil.
 
-ui.py – allt med meny + input + enkel felhantering.
+Projektet är byggt som ett mini-projekt för att visa modulindelning, importer och felhantering i Python.
 
-gifts_data.py – bara listor/dictionary med förslag.
 
-gifts_logic.py – funktion som väljer ett förslag utifrån kategori.
+Funktioner:
 
-Utveckla:
-Spara förslagen som en inköpslista i txt-fil.
-(Pathlib - skapa en output data-folder)
-"Vill du spara i en textfil?"
+- Välj kategori (man, kvinna, pojkvän, flickvän, alla)
+
+- Slumpmässiga julklappsförslag
+
+- Samma förslag visas bara en gång per kategori
+
+- Möjlighet att spara förslag med datum och kategori till fil
+
+- Felhantering vid ogiltiga menyval
+
+Köra programmet:
+
+- Aktivera virtuell miljö och kör:
+
+christmas-gifts
+
+- Alternativt:
+
+python -m core.main
+
+
+Projektstruktur:
+christmas_gifts
+│
+├── core
+│   ├── __init__.py
+│   ├── config.py
+│   ├── gifts_data.py
+│   ├── gifts_logic.py
+│   ├── main.py          # Huvudprogram
+│   └── ui.py            # Menyer och användarinput
+│
+├── data
+│   └── saved_gifts.txt  # Sparade julklappsförslag
+│
+├── .gitignore
+├── pyproject.toml
+├── README.md
+├── requirements.txt
+└── structure.txt
