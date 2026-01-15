@@ -1,21 +1,17 @@
 # importerar funktioner från andra filer.
 from datetime import datetime
-from pathlib import Path
-from core.config import MENU_OPTIONS, APP_TITLE
+from core.config import APP_TITLE, DATA_DIR, OUTPUT_FILE
 from core.ui import show_menu, ask_menu_choice, ask_continue
 from core.gifts_logic import get_random_gift
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
-DATA_DIR = PROJECT_ROOT / 'data'
-OUTPUT_FILE = DATA_DIR / 'saved_gifts.txt'
-
 # dict. som kopplar menyvalet till en kategori - gör koden renare.
-CHOICE_TO_CATEGORY = {
+MENU_OPTIONS = {
     '1': 'man',
     '2': 'kvinna',
     '3': 'pojkvän',
     '4': 'flickvän',
     '5': 'alla',
+    '6': 'avsluta'
 }
 
 def main():                         # huvudfunktionen som kör hela programmet.
@@ -29,14 +25,14 @@ def main():                         # huvudfunktionen som kör hela programmet.
             print('God Jul! \U0001F384')
             break
 
-        category = MENU_OPTIONS[choice]['value'] # överstätter t.ex '1' till 'man'
+        category = MENU_OPTIONS[choice]          # överstätter t.ex '1' till 'man'
         used_gifts = set()                       # 'set' säkerställer att samma förslag inte föreslås två gånger.
 
         while True:                              # while-loop till "vill du ha ett till förslag?"-inputen.
             gift = get_random_gift(category, used_gifts)  # hämtar ett slumpat förslag från "gifts_logic"-filen.
 
-            if gift is None:                     # säkerhetskontroll om kategorin skulle vara tom.
-                print('Inga förslag för den här kategorin.')
+            if not gift:                         # säkerhetskontroll om kategorin skulle vara tom.
+                print (f'Inga fler förslag för kategorin {category}.')
                 break
 
             used_gifts.add(gift)
