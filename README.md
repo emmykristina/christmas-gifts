@@ -17,6 +17,8 @@ Funktioner:
 
 - Felhantering vid ogiltiga menyval eller slut på förslag
 
+- Logger som visar användarens aktivitet
+
 Köra programmet:
 
 - Aktivera virtuell miljö och kör:
