@@ -6,7 +6,7 @@ def show_menu():
     print('3) Pojkvän')
     print('4) Flickvän')
     print('5) Funkar för alla')
-    print('6) Avlsuta')
+    print('6) Avsluta')
 
 # funktion som hämtar ett val från användaren (1-6).
 def ask_menu_choice() -> str:
