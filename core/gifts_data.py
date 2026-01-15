@@ -6,13 +6,12 @@ GIFTS = {
     'man': [ # key
         'Whiskyglas', # values:
         'Träningshandskar',
-        'Bluetooth-högtalare',
-        ''
+        'Bluetooth-högtalare'
     ],
     'kvinna': [
         'Doftljus',
         'Tofflor',
-        'Smycke',
+        'Smycke'
     ],
     'pojkvän': [
         'Gaming-musmatta',
