@@ -15,7 +15,7 @@ Funktioner:
 
 - Möjlighet att spara förslag med datum och kategori till fil
 
-- Felhantering vid ogiltiga menyval
+- Felhantering vid ogiltiga menyval eller slut på förslag
 
 Köra programmet:
 
