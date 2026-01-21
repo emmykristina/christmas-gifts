@@ -1,4 +1,4 @@
-== Christmas Gifts CLI ==
+-- Christmas Gifts CLI --
 
 Ett enkelt CLI-program som ger julklappsförslag baserat på kategori och låter användaren spara förslag till en textfil.
 
