@@ -1,10 +1,13 @@
 [project]
-name = 'christmas-gifts'
-version = '0.1.0'
+name = "christmas-gifts"
+version = "0.1.0"
 
 [project.scripts]
-christmas-gifts = 'core.main:main'
+christmas-gifts = "core.main:main"
 
 [build-system]
-requires = ['setuptools']
-build-backend = 'setuptools.build_meta'
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["core", "utility"]
