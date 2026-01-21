@@ -1,6 +1,6 @@
 # importerar funktioner från andra filer.
 from datetime import datetime
-from core.config import APP_TITLE, DATA_DIR, OUTPUT_FILE, GIFTS_FILE, LOG_FILE
+from core.config import APP_TITLE, DATA_DIR, OUTPUT_FILE, LOG_FILE
 from core.ui import show_menu, ask_menu_choice, ask_continue
 from core.gifts_logic import get_random_gift
 from utility.logger import setup_logger
@@ -17,7 +17,7 @@ MENU_OPTIONS = {
 }
 
 def main():                         # huvudfunktionen som kör hela programmet.
-    DATA_DIR.mkdir(exist_ok=True)   # skapa mappen om den inte finns, krascha inte om den redan finns.
+    DATA_DIR.mkdir(parents=True, exist_ok=True)   # skapa mappen om den inte finns, krascha inte om den redan finns.
     logger = setup_logger(LOG_FILE)
     logger.info("Application started")
     
