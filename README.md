@@ -17,7 +17,7 @@ Funktioner:
 
 - Felhantering vid ogiltiga menyval eller slut på förslag
 
-- Logger som visar användarens aktivitet
+- Logger som skriver programmets händerlser till en loggfil
 
 Köra programmet:
 
